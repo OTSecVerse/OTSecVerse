@@ -1,0 +1,143 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://otsecverse.github.io/</id>
+  <title>otsecverse</title>
+  <subtitle>CyberMaya, where we delve deep into the digital realm's illusions and truths.</subtitle>
+  <updated>2025-11-13T18:50:55+05:30</updated>
+  <author>
+    <name>Abhishek Pandey</name>
+    <uri>https://otsecverse.github.io/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://otsecverse.github.io/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="https://otsecverse.github.io/"/>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <rights> © 2025 Abhishek Pandey </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Post 47 | Security Advisory: Plaintext DDNS Credentials in Reolink Video Doorbell Wi-Fi (CVE-2025-60858)</title>
+    <link href="https://otsecverse.github.io/posts/Post-47/" rel="alternate" type="text/html" title="Post 47 | Security Advisory: Plaintext DDNS Credentials in Reolink Video Doorbell Wi-Fi (CVE-2025-60858)" />
+    <published>2025-10-12T00:00:00+05:30</published>
+  
+    <updated>2025-10-12T00:00:00+05:30</updated>
+  
+    <id>https://otsecverse.github.io/posts/Post-47/</id>
+    <content type="text/html" src="https://otsecverse.github.io/posts/Post-47/" />
+    <author>
+      <name>Abhishek Pandey</name>
+    </author>
+
+  
+    
+    <category term="Research" />
+    
+  
+
+  <summary>Author: Shaunak Ganorkar, Traboda Cyberlabs Pvt. Ltd. Published: October 2025 CVE ID: CVE-2025-60858 Vendor: Reolink Product: Reolink Video Doorbell Wi-Fi – DB_566128M5MP_W Affected Components: /usr/sbin/ddns, ddnsrun.dyndns, ddnsrun.noip Impact: Exposure of Sensitive DDNS Credentials Severity: Medium Status: Public    Summary  Reolink Video Doorbell Wi-Fi (DB_566128M5MP_W) stores and transmits...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Post 46 | Security Advisory: Unsecured UART Root Shell in Reolink Video Doorbell Wi-Fi (CVE-2025-60856)</title>
+    <link href="https://otsecverse.github.io/posts/Post-46/" rel="alternate" type="text/html" title="Post 46 | Security Advisory: Unsecured UART Root Shell in Reolink Video Doorbell Wi-Fi (CVE-2025-60856)" />
+    <published>2025-10-12T00:00:00+05:30</published>
+  
+    <updated>2025-10-12T00:00:00+05:30</updated>
+  
+    <id>https://otsecverse.github.io/posts/Post-46/</id>
+    <content type="text/html" src="https://otsecverse.github.io/posts/Post-46/" />
+    <author>
+      <name>Abhishek Pandey</name>
+    </author>
+
+  
+    
+    <category term="Research" />
+    
+  
+
+  <summary>Author: Shaunak Ganorkar, Traboda Cyberlabs Pvt. Ltd. Published: October 2025 CVE ID: CVE-2025-60856 Vendor: Reolink Product: Reolink Video Doorbell Wi-Fi – DB_566128M5MP_W Affected Components: /etc/init.d/start_app, /etc/passwd, /dev/ttyS0 Impact: Physical Root-Level Code Execution Severity: Medium Status: Public    Summary  Reolink Video Doorbell Wi-Fi (DB_566128M5MP_W) exposes an unsecured U...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Post 45 | Security Advisory: Improper Firmware Signature Verification in Reolink Video Doorbell Wi-Fi (CVE-2025-60855)</title>
+    <link href="https://otsecverse.github.io/posts/Post-45/" rel="alternate" type="text/html" title="Post 45 | Security Advisory: Improper Firmware Signature Verification in Reolink Video Doorbell Wi-Fi (CVE-2025-60855)" />
+    <published>2025-10-12T00:00:00+05:30</published>
+  
+    <updated>2025-10-12T00:00:00+05:30</updated>
+  
+    <id>https://otsecverse.github.io/posts/Post-45/</id>
+    <content type="text/html" src="https://otsecverse.github.io/posts/Post-45/" />
+    <author>
+      <name>Abhishek Pandey</name>
+    </author>
+
+  
+    
+    <category term="Research" />
+    
+  
+
+  <summary>Author: Shaunak Ganorkar, Traboda Cyberlabs Pvt. Ltd. Published: October 2025 CVE ID: CVE-2025-60855 Vendor: Reolink Product: Reolink Video Doorbell Wi-Fi – DB_566128M5MP_W Affected Components: /app/upgrade, libmbedtls.so, libmbedcrypto.so Impact: Remote Arbitrary Code Execution with Root Privileges Severity: High Status: Public    Summary  The Reolink Video Doorbell Wi-Fi (DB_566128M5MP_W) fir...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Post 44 | Security Advisory: Unauthenticated Command Injection in D-Link DIR-868L B1 (CVE-2025-55583)</title>
+    <link href="https://otsecverse.github.io/posts/Post-44/" rel="alternate" type="text/html" title="Post 44 | Security Advisory: Unauthenticated Command Injection in D-Link DIR-868L B1 (CVE-2025-55583)" />
+    <published>2025-08-21T00:00:00+05:30</published>
+  
+    <updated>2025-08-21T15:36:13+05:30</updated>
+  
+    <id>https://otsecverse.github.io/posts/Post-44/</id>
+    <content type="text/html" src="https://otsecverse.github.io/posts/Post-44/" />
+    <author>
+      <name>Abhishek Pandey</name>
+    </author>
+
+  
+    
+    <category term="Research" />
+    
+  
+
+  <summary>Author: Shaunak Ganorkar, Traboda Cyberlabs Pvt. Ltd. Published: August 2025 CVE ID: CVE-2025-55583 Vendor: D-Link Systems, Inc. Product: D-Link DIR-868L B1 Wireless Router Firmware Affected: FW2.05WWB02 Firmware SHA-256: 545809e9851f26ea349a1681fbff4b1516b1af48d7364ac45b7016c901bdbaa8 Impact: Remote Unauthenticated Root-Level Command Execution Severity: High Status: Public    Summary  The D-Li...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Post 43 | Security Advisory: Insecure Permissions in D-Link DCS-825L Firmware (CVE-2025-55582)</title>
+    <link href="https://otsecverse.github.io/posts/Post-43/" rel="alternate" type="text/html" title="Post 43 | Security Advisory: Insecure Permissions in D-Link DCS-825L Firmware (CVE-2025-55582)" />
+    <published>2025-08-21T00:00:00+05:30</published>
+  
+    <updated>2025-08-21T15:36:13+05:30</updated>
+  
+    <id>https://otsecverse.github.io/posts/Post-43/</id>
+    <content type="text/html" src="https://otsecverse.github.io/posts/Post-43/" />
+    <author>
+      <name>Abhishek Pandey</name>
+    </author>
+
+  
+    
+    <category term="Research" />
+    
+  
+
+  <summary>Author: Shaunak Ganorkar, Traboda Cyberlabs Pvt. Ltd. Published: August 2025 CVE ID: CVE-2025-55582 Vendor: D-Link Systems, Inc. Product: D-Link DCS-825L Wi-Fi Baby Camera Firmware Affected: v1.08.01 (EU Release) Firmware SHA-256: c11f4adddbea80fb173f7fbfc3d55fab6029af390e532261f659500eff42d0c6 Impact: Persistent Root-Level Code Execution Severity: High Status: Public    Summary  The D-Link DCS...</summary>
+
+  </entry>
+
+</feed>
+
+
