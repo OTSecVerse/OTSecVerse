@@ -34,7 +34,7 @@ pwa:
 
 paginate: 15
 
-avatar: "{{ site.baseurl }}/assets/images/Post-0.png"
+avatar: "/assets/images/post-0.png"
 toc: true
 
 kramdown:
@@ -94,6 +94,7 @@ exclude:
   - LICENSE
   - "*.config.js"
   - package*.json
+  - "*.bak"
 
 jekyll-archives:
   enabled: [categories, tags]
