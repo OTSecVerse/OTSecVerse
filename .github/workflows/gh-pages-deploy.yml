@@ -18,8 +18,9 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          # persist-credentials true is default; we rely on the PAT when deploying via peaceiris
-          # if you ever want the action to use the PAT for checkout, set token: ${{ secrets.DEPLOY_TOKEN }}
+          persist-credentials: false
+          # If you ever want the action to use the PAT for checkout, set:
+          # token: ${{ secrets.DEPLOY_TOKEN }}
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -58,8 +59,9 @@ jobs:
         with:
           publish_dir: ./_site
           publish_branch: gh-pages
-          github_token: ${{ secrets.DEPLOY_TOKEN }}
+          personal_token: ${{ secrets.DEPLOY_TOKEN }}
           user_name: 'github-actions[bot]'
           user_email: '41898282+github-actions[bot]@users.noreply.github.com'
           keep_files: false
           allow_empty_commit: false
+
