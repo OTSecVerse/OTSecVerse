@@ -1,29 +1,220 @@
-{%- comment -%}
-Global <head> include
-Uses relative_url so GitHub Pages project baseurl (/OTSecVerse2) works
-{%- endcomment -%}
-
+<!-- Patched head partial for OTSecVerse: add Font Awesome and avatar/icon CSS -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+<title>{{ page.title | default: site.title }}</title>
 
-<!-- FAVICONS -->
-<link rel="icon" href="{{ '/assets/favicons/favicon.ico' | relative_url }}">
-<link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/favicons/apple-touch-icon.png' | relative_url }}">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicons/favicon-32x32.png' | relative_url }}">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicons/favicon-16x16.png' | relative_url }}">
-<link rel="manifest" href="{{ '/assets/favicons/site.webmanifest' | relative_url }}">
-
-<!-- CSS -->
+<!-- Theme CSS (existing) -->
 <link rel="stylesheet" href="{{ '/assets/css/jekyll-theme-chirpy.css' | relative_url }}">
 
-<!-- Canonical URL -->
-<link rel="canonical" href="{{ page.url | absolute_url }}">
+<!-- Font Awesome (CDN) - required for icons used by the theme -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+>
 
-<!-- SEO -->
-<meta name="description" content="{{ page.description | default: site.description }}">
+<!-- Custom fixes: avatar sizing + ensure icons render -->
+<style>
+  /* Move search bar to the LEFT (top-left position) */
+  #topbar {
+    display: flex;
+    justify-content: space-between !important; /* content left, search right */
+    align-items: center;
+    gap: 12px;
+  }
 
-<!-- Site Navigation URLs MUST use relative_url -->
-<link rel="preload" as="fetch" href="{{ '/' | relative_url }}">
-<link rel="preload" as="fetch" href="{{ '/about/' | relative_url }}">
-<link rel="preload" as="fetch" href="{{ '/categories/' | relative_url }}">
+  #search {
+    margin-left: auto !important; /* push search to the RIGHT */
+    order: 3 !important; /* ensure it stays last */
+    display: flex;
+    align-items: center;
+  }
+
+  #breadcrumb {
+    order: 2 !important; /* breadcrumb after search */
+  }
+
+  #topbar-title {
+    order: 3 !important;
+  }
+
+  /* Avatar sizing — ensure the avatar stays a small circular icon */
+  /* Avatar centered */
+  #avatar img,
+  .profile-wrapper #avatar img {
+    width: 64px !important; /* smaller avatar */
+    height: 64px !important;
+    max-width: 64px !important;
+    max-height: 64px !important;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+  }
+
+  /* If .site-title next to avatar looks cramped, add spacing */
+  .profile-wrapper {
+    display: flex;
+    flex-direction: column; /* avatar → title → subtitle vertically */
+    align-items: flex-start; /* LEFT align all items */
+    text-align: left; /* ensure text is left aligned */
+    gap: 6px;
+  }
+
+  /* Sidebar width: keep it compact so avatar doesn't push layout */
+  #sidebar {
+    width: 260px;
+  }
+
+  /* Ensure topbar icons align and fontawesome styles apply */
+  /* Fix Font Awesome so brand icons (Twitter/X, GitHub) display correctly */
+  .fas,
+  .far,
+  .fa {
+    font-family: 'Font Awesome 6 Free' !important;
+    font-weight: 900 !important;
+  }
+
+  /* Brands (fab) need different font family + normal weight */
+  .fab,
+  .fa-brands {
+    font-family: 'Font Awesome 6 Brands' !important;
+    font-weight: 400 !important;
+  }
+
+  /* If theme has CSS resetting sizes, force nav icons to normal size */
+  .nav .fa-fw {
+    font-size: 0.95rem;
+    vertical-align: middle;
+  }
+
+  /* Small screens revert to theme defaults */
+  @media (max-width: 991px) {
+    #avatar img {
+      width: 128px !important;
+      height: 128px !important;
+    }
+    #sidebar {
+      width: 100%;
+      position: static;
+    }
+  }
+  /* Remove bullet/dot before Home, About, Categories icons */
+  #sidebar .nav {
+    list-style: none !important;
+    padding-left: 0 !important;
+  }
+  #sidebar .nav li {
+    list-style-type: none !important;
+  }
+  /* Social icons horizontal alignment */
+  .sidebar-bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+  }
+  .sidebar-bottom a,
+  .sidebar-bottom button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+
+<!-- Twitter/X icon fix -->
+<style>
+  /* Ensure brand icons use the Brands font and render correctly */
+  .fa-x-twitter,
+  .fa-twitter,
+  .fa-twitter-square,
+  .fa-twitter-for-the-web {
+    font-family: 'Font Awesome 6 Brands' !important;
+    font-weight: 400 !important;
+    display: inline-block !important;
+    speak: none !important;
+  }
+</style>
+
+<!-- Stronger Font Awesome visibility fixes -->
+<style>
+  /* Force all font-awesome variants to be visible and use correct font families */
+  i[class*='fa-'],
+  span[class*='fa-'],
+  .fa,
+  .fas,
+  .far,
+  .fab,
+  .fa-brands {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    text-rendering: auto !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+  }
+
+  /* Ensure brand icons use Brands font */
+  .fab,
+  .fa-brands,
+  i[class*='fa-brands'],
+  i.fab {
+    font-family: 'Font Awesome 6 Brands' !important;
+    font-weight: 400 !important;
+  }
+
+  /* Ensure solid/regular icons use Free font */
+  .fas,
+  .far,
+  .fa {
+    font-family: 'Font Awesome 6 Free' !important;
+    font-weight: 900 !important;
+  }
+
+  /* Apply correct font to pseudo-elements too */
+  i[class*='fa-']:before,
+  i[class*='fa-']:after,
+  span[class*='fa-']:before,
+  span[class*='fa-']:after {
+    font-family: inherit !important;
+    speak: none !important;
+  }
+
+  /* Safety: override any 'content' removal or sizing rules */
+  .sidebar-bottom i,
+  .sidebar-bottom span {
+    font-size: 1.1rem !important;
+    line-height: 1 !important;
+    width: auto !important;
+    height: auto !important;
+  }
+</style>
+
+<!-- Standalone style block: ensure Twitter/X brand icon shows and social icons horizontal -->
+<style>
+  /* Ensure brand icons use the Brands font and render correctly */
+  .fa-x-twitter,
+  .fa-twitter,
+  .fa-twitter-square,
+  .fa-twitter-for-the-web {
+    font-family: 'Font Awesome 6 Brands' !important;
+    font-weight: 400 !important;
+    display: inline-block !important;
+    speak: none !important;
+  }
+
+  /* Keep social icons horizontal and spaced */
+  .sidebar-bottom {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 14px !important;
+    align-items: center !important;
+  }
+
+  .sidebar-bottom a,
+  .sidebar-bottom button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+</style>
