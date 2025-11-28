@@ -1,72 +1,32 @@
-**Cyber Maya** 🌐
+**OTSecVerse** 🌐
 
-*"In Cyber's Illusion, Lies Truth" - मायायाम् अभिध्यायाम् (Mayayam Abhidhyayam)*
+Welcome to **OTSecVerse** — a personal project dedicated to exploring the intersection of **Operational Technology (OT)** and **Cybersecurity**.  
 
-Welcome to Cyber Maya, a blog dedicated to exploring the intricate and sometimes deceptive world of cybersecurity. This project merges Indian philosophy with deep technical insights into the digital realm, offering a unique perspective on the intersection of cybersecurity and digital deception.
+This site serves as a **learning space and knowledge journal**, documenting **research, observations, and insights** from ongoing exploration into **industrial systems, ICS, and SCADA security**.
 
-📖 **About the Project**
 
-Cyber Maya aims to unravel the complexities and hidden threats of the digital world, much like how ancient Indian philosophy speaks of Maya (माया), the illusion masking reality. This blog tackles various cybersecurity topics such as phishing, malware analysis, and digital privacy, with an emphasis on making cybersecurity accessible and understandable to both beginners and experts.
+## What This Site Is About
 
-**Visit the blog here: CyberMaya**
+**OTSecVerse** focuses on practical, research-oriented content aimed at understanding and improving security across industrial and critical infrastructure environments.  
 
-*Key Topics Covered:*
-- Cybersecurity Essentials: Understanding and safeguarding against phishing, malware, and nation-state actors.
-- Privacy & Security: Navigating the hidden dangers of data breaches, digital identity, and cloud security.
-- Tech Innovations: From smart homes to deepfakes, explore the risks and rewards of emerging technologies.
+Here you’ll find:
+-  **Advisories and technical analyses**  
+-  **Insights into OT/ICS protocols and architectures**  
+-  **Discussions on security posture and resilience**  
+-  **Reflections on cybersecurity learning and trends**
 
-🚀 **Features**
-- In-depth blog posts on various cybersecurity topics.
-- Detailed analysis of current cyber threats and digital deceptions.
-- Educational content geared toward both novices and experts.
-- Reflections on the parallels between cybersecurity and philosophical concepts like illusion and reality.
+All content is **independent**, written from genuine curiosity and a passion for learning in the OT security domain.
 
-🛠️ **Installation & Usage**
 
-  This repository contains the source code for the Cyber Maya blog. To view or contribute, you can clone the repository and build the site locally using Jekyll.
+## Philosophy
 
-**Prerequisites**
+"*Understanding systems deeply is the foundation of securing them.*”
 
-    Jekyll: Install via Ruby gem.
+**OTSecVers* was created to share findings, methodologies, and lessons learned — always from a perspective of **responsible research, curiosity, and continuous learning**.
 
-    bash
+## Areas of Interest
 
-    gem install jekyll bundler
-
-**Build the Site**
-
-    Clone the repository:
-
-    bash
-
-    git clone https://github.com/cyber-maya/cyber-maya.github.io.git
-
-    cd cyber-maya.github.io
-
-**Install dependencies:**
-
-    bash
-
-    bundle install
-
-**Serve the site locally:**
-
-    bash
-
-    bundle exec jekyll serve
-
-***Access the site at [https://www.cybermaya.in](https://cybermaya.in)***
-
-📜 **License**
-
-This project is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) license. You are free to share the material but may not use it for commercial purposes or create derivatives.
-
-For more details, see the full license here.
-
-👤 Author: 
-    Shaunak Ganorkar
-    
-    Cybersecurity Enthusiast & Blogger
-    
-    [LinkedIn](https://www.linkedin.com/in/shaunakganorkar/)
-
+- ICS/SCADA Security  
+- Network and Protocol Research (Modbus, DNP3, OPC UA, EtherNet/IP)  
+- Embedded Systems and Hardware Security  
+- Threat Modeling and Resilience in OT Environments  
