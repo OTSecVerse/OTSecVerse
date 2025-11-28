@@ -4,13 +4,13 @@ theme: jekyll-theme-chirpy
 lang: en
 timezone: Asia/Kolkata
 
-title: otsecverse
-tagline: "In Cyber's Illusion, Lies Truth. In the illusion, lies the intent."
+title: OTSecVerse
+tagline: "Discovering the Universe of OT Security."
 description: >-
-  CyberMaya, where we delve deep into the digital realm's illusions and truths.
+  OTSecVerse is a dedicated space exploring the expanding universe of Operational Technology and Industrial Cybersecurity — sharing research, insights, and practical knowledge to help secure critical infrastructures.
 
 # Site URL (no trailing slash)
-url: "https://otsecverse.in"
+url: "https://otsecverse.github.io"
 
 # Required for GitHub PROJECT PAGES
 baseurl: "/OTSecVerse"
@@ -104,3 +104,6 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+assets:
+  self_host: true
