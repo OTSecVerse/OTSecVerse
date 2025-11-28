@@ -10,7 +10,7 @@ description: >-
   OTSecVerse is a dedicated space exploring the expanding universe of Operational Technology and Industrial Cybersecurity — sharing research, insights, and practical knowledge to help secure critical infrastructures.
 
 # Site URL (no trailing slash)
-url: "https://otsecverse.io"
+url: "https://OTSecVerse.io"
 
 # Required for GitHub PROJECT PAGES
 baseurl: "/OTSecVerse"
